@@ -936,6 +936,9 @@ dxl_ret_t read(dynamixel::PortHandler *portHandler, dynamixel::PacketHandler *pa
   return ret;
 }
 
+/*******************************************************************************
+  IRsensor distance Detecting
+*******************************************************************************/
 void IRsensor(void)
 {
   int sensorPin = 0;
@@ -962,7 +965,5 @@ void IRsensor(void)
   //  Serial.println("");
   IRsensor_msg.linear.x = distance_f;
   IRsensor_pub.publish(&IRsensor_msg);
-
-
 }
 
