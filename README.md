@@ -5,7 +5,7 @@ start:
 
 update:
 	git add -A .
-	git commit -m "[<a>] <msg>"
-	( <a>: Add/Delete/Refactor )
+	git commit -m "[] msg"
+	( []: Add/Delete/Refactor )
 	git push
 
